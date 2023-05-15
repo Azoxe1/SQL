@@ -36,6 +36,34 @@ join album_singers as2 on a.id = as2.id_album
 join singer s2 on s2.id = as2.id_singer 
 where s2.name = '2Pac'
 
+select distinct a.name
+from album a 
+join album_singers as2 on as2.id_album = a.id 
+join singer s on s.id = as2.id_singer 
+join singer_genre sg on s.id = sg.id_singer 
+join genre g on g.id = sg.id_genre 
+group by a.name
+having count(g.name) > 1; 
+
+select s.name
+from song s 
+left join collection_song cs on s.id = cs.id_song 
+where cs.id_collection is null;
+
+select s.name,s2.duration
+from singer s 
+join album_singers as2 on as2.id_singer = s.id 
+join album a on a.id = as2.id_album 
+join song s2 on s2.id = a.id
+WHERE s2.duration IN (SELECT MIN(duration) FROM Song);
+
+--select distinct a.name
+--from album a 
+--join song s on s.id_album = a.id
+--group by a.name
+--having count(s.name) = цикл?*;
+--
+--
 
 --
 
