@@ -20,13 +20,14 @@ insert into collection(date_create_collection, name) values
 ( '2020-01-01', 'IDK');
 
 insert into song (id_album, name, date_create_song, duration) values 
-(1, 'Zyko', '2018-01-01', '4:00'), 
-(2, 'Hail Marry', '2019-01-01', '3:56'), 
-(1, 'Factice', '2018-01-01', '1:20' ), 
-(3, 'The Less I Know The Better', '2011-01-01', '1:50'), 
-(2, 'Keep Ya Head Up', '2019-01-01', '5:00'),
-(3, 'Begin Again', '2021-01-01', '3:50'),
-(1, 'My great agony', '2018-01-01', '4:50');
+(1, 'Zyko', '2018-01-01', '00:04:00'), 
+(2, 'Hail Marry', '2019-01-01', '00:03:56'), 
+(1, 'Factice', '2018-01-01', '00:01:20' ), 
+(3, 'The Less I Know The Better', '2011-01-01', '00:01:50'), 
+(2, 'Keep Ya Head Up', '2019-01-01', '00:05:00'),
+(3, 'Begin Again', '2021-01-01', '00:03:50'),
+(1, 'My great agony', '2018-01-01', '00:04:50'),
+(1, 'Myself', '2018-01-01', '00:06:50');;
 --
 
 insert into singer_genre values
