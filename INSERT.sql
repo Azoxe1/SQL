@@ -27,7 +27,8 @@ insert into song (id_album, name, date_create_song, duration) values
 (2, 'Keep Ya Head Up', '2019-01-01', '00:05:00'),
 (3, 'Begin Again', '2021-01-01', '00:03:50'),
 (1, 'My great agony', '2018-01-01', '00:04:50'),
-(1, 'Myself', '2018-01-01', '00:06:50');;
+(1, 'Amy', '2018-01-01', '00:04:50'),
+(1, 'Myself', '2018-01-01', '00:06:50');
 --
 
 insert into singer_genre values
